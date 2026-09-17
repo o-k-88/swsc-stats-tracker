@@ -1,0 +1,159 @@
+{
+  "id": "u13ea",
+  "name": "U13 EA",
+  "season": "2026-2027",
+  "record": {
+    "total": 0,
+    "wins": 0,
+    "losses": 0,
+    "draws": 0,
+    "goalsFor": 0,
+    "goalsAgainst": 0
+  },
+  "players": [
+    {
+      "id": "644f997f-609e-494e-9d60-498f9f586bf8",
+      "name": "Jaxson Alemany",
+      "number": 9,
+      "position": "Defender",
+      "goals": 0,
+      "assists": 0,
+      "gamesPlayed": 0
+    },
+    {
+      "id": "f6fa0a97-7b9a-43cf-8a18-f9942187df21",
+      "name": "Jacob Bascomb",
+      "number": 39,
+      "position": "Midfielder",
+      "goals": 0,
+      "assists": 0,
+      "gamesPlayed": 0
+    },
+    {
+      "id": "3543b43d-0480-4804-92a1-bb9d9a0f05a5",
+      "name": "Braydon Caul",
+      "number": 17,
+      "position": "Midfielder",
+      "goals": 0,
+      "assists": 0,
+      "gamesPlayed": 0
+    },
+    {
+      "id": "84cec8a8-f056-4f57-8106-c99ad9960bfc",
+      "name": "Christian Coseo",
+      "number": 46,
+      "position": "Midfielder",
+      "goals": 0,
+      "assists": 0,
+      "gamesPlayed": 0
+    },
+    {
+      "id": "3324c606-95f8-4467-8392-e2685b6e3252",
+      "name": "Eric Davis",
+      "number": 10,
+      "position": "Forward",
+      "goals": 0,
+      "assists": 0,
+      "gamesPlayed": 0
+    },
+    {
+      "id": "6e82972e-3093-49ea-99ec-65341a777ea4",
+      "name": "Benjamin Fronhofer",
+      "number": 36,
+      "position": "Midfielder",
+      "goals": 0,
+      "assists": 0,
+      "gamesPlayed": 0
+    },
+    {
+      "id": "f7a98e25-21b1-4656-9dea-1c3fd8421b1f",
+      "name": "Sage Gestwick",
+      "number": 11,
+      "position": "Midfielder",
+      "goals": 0,
+      "assists": 0,
+      "gamesPlayed": 0
+    },
+    {
+      "id": "e299e6f8-6465-4619-b055-76dfa33254a3",
+      "name": "Rewan Harris",
+      "number": 40,
+      "position": "Midfielder",
+      "goals": 0,
+      "assists": 0,
+      "gamesPlayed": 0
+    },
+    {
+      "id": "5841cbe8-8d5b-4634-be04-7afb2874e347",
+      "name": "Joseph Jiang",
+      "number": 12,
+      "position": "Midfielder",
+      "goals": 0,
+      "assists": 0,
+      "gamesPlayed": 0
+    },
+    {
+      "id": "939eb343-719f-497b-82ec-57bf29fdc733",
+      "name": "Von Miller",
+      "number": 6,
+      "position": "Midfielder",
+      "goals": 0,
+      "assists": 0,
+      "gamesPlayed": 0
+    },
+    {
+      "id": "a14f3fee-65fc-44f3-952b-3f0a551189d8",
+      "name": "Rowan Milligan",
+      "number": 51,
+      "position": "Midfielder",
+      "goals": 0,
+      "assists": 0,
+      "gamesPlayed": 0
+    },
+    {
+      "id": "8cc44eee-1db3-410b-b3c0-fd7176533e5c",
+      "name": "Graham Otto",
+      "number": 30,
+      "position": "Midfielder",
+      "goals": 0,
+      "assists": 0,
+      "gamesPlayed": 0
+    },
+    {
+      "id": "062b89f9-395e-4feb-977c-8ec92e90b758",
+      "name": "Sonny Poreca",
+      "number": 44,
+      "position": "Midfielder",
+      "goals": 0,
+      "assists": 0,
+      "gamesPlayed": 0
+    },
+    {
+      "id": "724b17eb-bb70-43d2-8531-4f38757e7a44",
+      "name": "Aiden Rice",
+      "number": 60,
+      "position": "Midfielder",
+      "goals": 0,
+      "assists": 0,
+      "gamesPlayed": 0
+    },
+    {
+      "id": "b851a409-377a-47ae-91af-1b55125b950a",
+      "name": "Hudson Walker",
+      "number": 49,
+      "position": "Midfielder",
+      "goals": 0,
+      "assists": 0,
+      "gamesPlayed": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "wildcats1",
+      "date": "8/15/2026",
+      "event": "vs Riverside United",
+      "location": "Home Field",
+      "status": "Completed"
+    }
+  ]
+}
