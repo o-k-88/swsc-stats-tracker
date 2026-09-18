@@ -87,7 +87,7 @@
       "id": "7da3f3d8-eb05-444b-be7e-c62b25cbebc4",
       "name": "Noah Hindson",
       "number": 29,
-      "position": "Midfielder",
+      "position": "Goalkeeper",
       "goals": 0,
       "assists": 0,
       "gamesPlayed": 0
@@ -141,7 +141,7 @@
       "id": "b455945b-812d-45c9-bb36-82e2c182d2ad",
       "name": "Carter Waldorf",
       "number": 30,
-      "position": "Goalkeeper",
+      "position": "Forward",
       "goals": 0,
       "assists": 0,
       "gamesPlayed": 0
@@ -149,11 +149,11 @@
   ],
   "events": [
     {
-      "id": "thunderbolts1",
-      "date": "8/16/2026",
-      "event": "vs Northfield Rangers",
-      "location": "Northfield Rangers",
-      "status": "Completed"
+      "id": "TBD",
+      "date": "TBD",
+      "event": "TBD",
+      "location": "TBD",
+      "status": "TBD"
     }
   ]
 }

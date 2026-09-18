@@ -1,3 +1,4 @@
+import { useMemo, useState } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { getTeam, topAssisters, topScorers } from "../data/loadTeams";
 import Avatar from "../components/Avatar";
@@ -5,6 +6,24 @@ import Avatar from "../components/Avatar";
 export default function TeamPage() {
   const { teamId } = useParams<{ teamId: string }>();
   const team = teamId ? getTeam(teamId) : undefined;
+  const [query, setQuery] = useState("");
+  const [positionFilter, setPositionFilter] = useState("All");
+
+  const positions = useMemo(
+    () => (team ? Array.from(new Set(team.players.map((p) => p.position))).sort() : []),
+    [team],
+  );
+
+  const sortedPlayers = useMemo(
+    () => (team ? [...team.players].sort((a, b) => a.number - b.number) : []),
+    [team],
+  );
+
+  const filteredPlayers = sortedPlayers.filter((player) => {
+    const matchesQuery = player.name.toLowerCase().includes(query.trim().toLowerCase());
+    const matchesPosition = positionFilter === "All" || player.position === positionFilter;
+    return matchesQuery && matchesPosition;
+  });
 
   if (!team) {
     return <Navigate to="/" replace />;
@@ -12,7 +31,6 @@ export default function TeamPage() {
 
   const scorers = topScorers(team);
   const assisters = topAssisters(team);
-  const sortedPlayers = [...team.players].sort((a, b) => a.number - b.number);
 
   return (
     <div className="page">
@@ -92,6 +110,30 @@ export default function TeamPage() {
 
       <section>
         <h2>Roster</h2>
+        <div className="roster-controls">
+          <input
+            type="text"
+            className="roster-search"
+            placeholder="Search players..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+          <select
+            className="roster-filter"
+            value={positionFilter}
+            onChange={(e) => setPositionFilter(e.target.value)}
+          >
+            <option value="All">All positions</option>
+            {positions.map((position) => (
+              <option key={position} value={position}>
+                {position}
+              </option>
+            ))}
+          </select>
+        </div>
+        {filteredPlayers.length === 0 ? (
+          <p className="muted">No players match your search.</p>
+        ) : (
         <div className="table-scroll">
           <table className="data-table">
             <thead>
@@ -108,7 +150,7 @@ export default function TeamPage() {
               </tr>
             </thead>
             <tbody>
-              {sortedPlayers.map((player) => (
+              {filteredPlayers.map((player) => (
                 <tr key={player.id}>
                   <td>{player.number}</td>
                   <td>
@@ -138,6 +180,7 @@ export default function TeamPage() {
             </tbody>
           </table>
         </div>
+        )}
       </section>
     </div>
   );
