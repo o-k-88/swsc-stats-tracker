@@ -68,7 +68,7 @@ export default function PlayerPage() {
         <ShareChart
           rows={[
             {
-              label: "Games Played",
+              label: "GP",
               value: teamTotalGames > 0 ? (player.gamesPlayed / teamTotalGames) * 100 : 0,
             },
             {

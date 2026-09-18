@@ -15,7 +15,7 @@ export default function Home() {
       <section className="about">
         <h2>About</h2>
         <p>
-          The website is dedicated to tracking the progress of U13 EA and White U11 NYCFC players,
+          The website is dedicated to tracking the progress of U13 EA and  U11 NYCFC players,
           providing insights into their development. Stay informed about upcoming events and be part
           of our vibrant community as we support the future stars of soccer.
         </p>
