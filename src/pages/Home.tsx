@@ -15,7 +15,7 @@ export default function Home() {
       <section className="about">
         <h2>About</h2>
         <p>
-          The website is dedicated to tracking the progress of U13 EA and  U11 NYCFC players,
+          The website is dedicated to tracking the progress of U13 EA and U11 NYCFC players,
           providing insights into their development. Stay informed about upcoming events and be part
           of our vibrant community as we support the future stars of soccer.
         </p>
@@ -32,17 +32,31 @@ export default function Home() {
               </div>
               <div className="team-card__stats">
                 <span>
-                  <strong>{team.players.length}</strong> players
+                  Players: <strong>{team.players.length}</strong>
                 </span>
                 {team.record && (
                   <>
                     <span>
-                      <strong>{team.record.total}</strong> games
+                      Games Played: <strong>{team.record.total}</strong>
                     </span>
                     <span className="team-card__record">
-                      <strong>{team.record.wins}</strong>W
-                      <strong>{team.record.losses}</strong>L
-                      <strong>{team.record.draws}</strong>D
+                      <span>
+                        Wins: <strong>{team.record.wins}</strong>
+                      </span>
+                      <span>
+                        Losses: <strong>{team.record.losses}</strong>
+                      </span>
+                      <span>
+                        Draws: <strong>{team.record.draws}</strong>
+                      </span>
+                    </span>
+                    <span className="team-card__goals">
+                      <span>
+                        Goals scored: <strong>{team.record.goalsFor}</strong>
+                      </span>
+                      <span>
+                        Goals against: <strong>{team.record.goalsAgainst}</strong>
+                      </span>
                     </span>
                   </>
                 )}

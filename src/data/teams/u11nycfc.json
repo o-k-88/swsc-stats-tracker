@@ -3,11 +3,11 @@
   "name": "U11 NYCFC",
   "season": "2026-2027",
   "record": {
-    "total": 0,
-    "wins": 0,
+    "total": 1,
+    "wins": 1,
     "losses": 0,
     "draws": 0,
-    "goalsFor": 0,
+    "goalsFor": 16,
     "goalsAgainst": 0
   },
   "players": [
@@ -15,19 +15,19 @@
       "id": "9a3b883d-3e1c-4ddc-9b27-d5e82afcc97b",
       "name": "Will Akins",
       "number": 41,
-      "position": "Forward",
-      "goals": 0,
-      "assists": 0,
-      "gamesPlayed": 0
+      "position": "Midfielder",
+      "goals": 1,
+      "assists": 2,
+      "gamesPlayed": 1
     },
     {
       "id": "19eb915b-2f68-47d6-b4b8-607c876fc863",
       "name": "Connor Alex",
       "number": 11,
       "position": "Midfielder",
-      "goals": 0,
+      "goals": 3,
       "assists": 0,
-      "gamesPlayed": 0
+      "gamesPlayed": 1
     },
     {
       "id": "d6a78e4c-65b2-40a7-897c-7f9d4995435c",
@@ -36,97 +36,97 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 0
+      "gamesPlayed": 1
     },
     {
       "id": "18a0337a-9134-4f7a-85d9-8150a4a2f0b8",
       "name": "Kyler Clark",
       "number": 55,
       "position": "Midfielder",
-      "goals": 0,
-      "assists": 0,
-      "gamesPlayed": 0
+      "goals": 2,
+      "assists": 1,
+      "gamesPlayed": 1
     },
     {
       "id": "b12b469c-3044-4efa-b906-29feb0fb26e5",
       "name": "Gavin Collins",
       "number": 19,
-      "position": "Midfielder",
-      "goals": 0,
+      "position": "Defender",
+      "goals": 1,
       "assists": 0,
-      "gamesPlayed": 0
+      "gamesPlayed": 1
     },
     {
       "id": "47d1b8f9-5128-4ba8-b631-996cd7207468",
       "name": "Malcolm Grant",
       "number": 25,
       "position": "Midfielder",
-      "goals": 0,
-      "assists": 0,
-      "gamesPlayed": 0
+      "goals": 2,
+      "assists": 1,
+      "gamesPlayed": 1
     },
     {
       "id": "36082934-7387-43de-b111-8f3ea5406565",
       "name": "Hudson Haag",
       "number": 19,
-      "position": "Midfielder",
+      "position": "Defender",
       "goals": 0,
-      "assists": 0,
-      "gamesPlayed": 0
+      "assists": 2,
+      "gamesPlayed": 1
     },
     {
       "id": "a12a622c-4d2f-4e92-bedf-b8069a9746d6",
       "name": "Colby Hartmann",
       "number": 44,
-      "position": "Midfielder",
+      "position": "Defender",
       "goals": 0,
-      "assists": 0,
-      "gamesPlayed": 0
+      "assists": 2,
+      "gamesPlayed": 1
     },
     {
       "id": "7da3f3d8-eb05-444b-be7e-c62b25cbebc4",
       "name": "Noah Hindson",
       "number": 29,
       "position": "Goalkeeper",
-      "goals": 0,
+      "goals": 1,
       "assists": 0,
-      "gamesPlayed": 0
+      "gamesPlayed": 1
     },
     {
       "id": "0c23151a-3cbf-4259-9036-02c350f51a1a",
       "name": "Thomas Montano",
       "number": 8,
-      "position": "Midfielder",
-      "goals": 0,
+      "position": "Defender",
+      "goals": 1,
       "assists": 0,
-      "gamesPlayed": 0
+      "gamesPlayed": 1
     },
     {
       "id": "d0bfa277-b2d5-4321-b9c1-30efb3d967f8",
       "name": "Mason Nahavandi",
       "number": 2,
-      "position": "Midfielder",
-      "goals": 0,
-      "assists": 0,
-      "gamesPlayed": 0
+      "position": "Defender",
+      "goals": 1,
+      "assists": 2,
+      "gamesPlayed": 1
     },
     {
       "id": "c6142eeb-ef41-404b-815f-bc477ab99408",
       "name": "Dominic Neaton",
       "number": 36,
-      "position": "Midfielder",
-      "goals": 0,
-      "assists": 0,
-      "gamesPlayed": 0
+      "position": "Forward",
+      "goals": 3,
+      "assists": 3,
+      "gamesPlayed": 1
     },
     {
       "id": "fbbfd3c2-af19-4b77-897a-03550aa7b483",
       "name": "William OConnor",
       "number": 51,
       "position": "Forward",
-      "goals": 0,
-      "assists": 0,
-      "gamesPlayed": 0
+      "goals": 1,
+      "assists": 2,
+      "gamesPlayed": 1
     },
     {
       "id": "c0d04c6c-e54c-40d4-8890-6ae2b34f305b",
@@ -135,7 +135,7 @@
       "position": "Goalkeeper",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 0
+      "gamesPlayed": 1
     },
     {
       "id": "b455945b-812d-45c9-bb36-82e2c182d2ad",
@@ -143,8 +143,8 @@
       "number": 30,
       "position": "Forward",
       "goals": 0,
-      "assists": 0,
-      "gamesPlayed": 0
+      "assists": 1,
+      "gamesPlayed": 1
     }
   ],
   "events": [

@@ -43,6 +43,11 @@ export default function TeamPage() {
             <span className="muted"> ({team.record.total} games)</span>
           </p>
         )}
+        {team.record && (
+          <p className="team-goals">
+            Goals scored: {team.record.goalsFor} - Goals against: {team.record.goalsAgainst}
+          </p>
+        )}
       </section>
 
       <section className="leaderboards">
@@ -51,10 +56,7 @@ export default function TeamPage() {
           <ol className="leaderboard__list">
             {scorers.map((player) => (
               <li key={player.id}>
-                <Link
-                  to={`/teams/${team.id}/players/${player.id}`}
-                  className="leaderboard__player"
-                >
+                <Link to={`/teams/${team.id}/players/${player.id}`} className="leaderboard__player">
                   <Avatar name={player.name} position={player.position} />
                   {player.name}
                 </Link>
@@ -68,10 +70,7 @@ export default function TeamPage() {
           <ol className="leaderboard__list">
             {assisters.map((player) => (
               <li key={player.id}>
-                <Link
-                  to={`/teams/${team.id}/players/${player.id}`}
-                  className="leaderboard__player"
-                >
+                <Link to={`/teams/${team.id}/players/${player.id}`} className="leaderboard__player">
                   <Avatar name={player.name} position={player.position} />
                   {player.name}
                 </Link>
@@ -134,52 +133,51 @@ export default function TeamPage() {
         {filteredPlayers.length === 0 ? (
           <p className="muted">No players match your search.</p>
         ) : (
-        <div className="table-scroll">
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Name</th>
-                <th>Position</th>
-                <th>GP</th>
-                <th>Goals</th>
-                <th>Assists</th>
-                <th>Goals/GP</th>
-                <th>Assists/GP</th>
-                <th>Total</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredPlayers.map((player) => (
-                <tr key={player.id}>
-                  <td>{player.number}</td>
-                  <td>
-                    <Link
-                      to={`/teams/${team.id}/players/${player.id}`}
-                      className="roster-player"
-                    >
-                      <Avatar name={player.name} position={player.position} />
-                      {player.name}
-                    </Link>
-                  </td>
-                  <td>{player.position}</td>
-                  <td>{player.gamesPlayed}</td>
-                  <td>{player.goals}</td>
-                  <td>{player.assists}</td>
-                  <td>
-                    {player.gamesPlayed > 0 ? (player.goals / player.gamesPlayed).toFixed(2) : "-"}
-                  </td>
-                  <td>
-                    {player.gamesPlayed > 0
-                      ? (player.assists / player.gamesPlayed).toFixed(2)
-                      : "-"}
-                  </td>
-                  <td>{player.goals + player.assists}</td>
+          <div className="table-scroll">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>GP</th>
+                  <th>Goals</th>
+                  <th>Assists</th>
+                  <th>Goals/GP</th>
+                  <th>Assists/GP</th>
+                  <th>Total</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {filteredPlayers.map((player) => (
+                  <tr key={player.id}>
+                    <td>{player.number}</td>
+                    <td>
+                      <Link to={`/teams/${team.id}/players/${player.id}`} className="roster-player">
+                        <Avatar name={player.name} position={player.position} />
+                        {player.name}
+                      </Link>
+                    </td>
+                    <td>{player.position}</td>
+                    <td>{player.gamesPlayed}</td>
+                    <td>{player.goals}</td>
+                    <td>{player.assists}</td>
+                    <td>
+                      {player.gamesPlayed > 0
+                        ? (player.goals / player.gamesPlayed).toFixed(2)
+                        : "-"}
+                    </td>
+                    <td>
+                      {player.gamesPlayed > 0
+                        ? (player.assists / player.gamesPlayed).toFixed(2)
+                        : "-"}
+                    </td>
+                    <td>{player.goals + player.assists}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         )}
       </section>
     </div>

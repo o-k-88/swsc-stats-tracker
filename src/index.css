@@ -7,8 +7,7 @@
   --muted: #5b6673;
   --accent: #2b7fff;
   --font-display: "Fraunces", "Iowan Old Style", serif;
-  --font-body:
-    "Work Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-body: "Work Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   color-scheme: light;
 }
 
@@ -320,8 +319,8 @@ a {
 
 .team-card__stats {
   display: flex;
-  gap: 1.1rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.7rem;
   font-size: 0.85rem;
   color: var(--muted);
 }
@@ -331,12 +330,16 @@ a {
   font-weight: 600;
 }
 
-.team-card__record strong {
-  margin-left: 0.35em;
+.team-card__record {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
 }
 
-.team-card__record strong:first-child {
-  margin-left: 0;
+.team-card__goals {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
 }
 
 .team-card__cta {
@@ -590,4 +593,3 @@ a {
   letter-spacing: 0.03em;
   text-align: center;
 }
-
