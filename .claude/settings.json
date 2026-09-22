@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "agent",
+            "if": "Bash(git commit*)",
+            "model": "sonnet",
+            "timeout": 240,
+            "statusMessage": "Running code-reviewer before commit...",
+            "prompt": "A `git commit` is about to run in this repository. Before it proceeds, act as the project's code-reviewer subagent: read and follow the review checklist in .claude/agents/code-reviewer.md exactly (it targets a React 19 + TypeScript + Vite codebase). Run `git diff --cached --stat` and `git diff --cached` to see what is staged. Read the full content of each changed file (not just the diff hunks) for context. Apply the priorities and process in that file, and only report findings that survive verification against the actual code, each with a concrete failure scenario (specific input/state that produces a wrong result or crash). Do not flag style nitpicks, speculative refactors, or low-confidence filler. After reviewing, respond with ONLY one JSON object and no other text: if you found one or more high-confidence issues, respond with {\"hookSpecificOutput\": {\"hookEventName\": \"PreToolUse\", \"permissionDecision\": \"deny\", \"permissionDecisionReason\": \"<numbered findings, each with file:line, a one-sentence summary, and the failure scenario>\"}} — otherwise respond with {\"hookSpecificOutput\": {\"hookEventName\": \"PreToolUse\", \"permissionDecision\": \"allow\"}}. $ARGUMENTS"
+          }
+        ]
+      }
+    ]
+  }
+}
