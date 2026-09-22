@@ -15,5 +15,12 @@
         ]
       }
     ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git diff *)",
+      "Bash(git show *)",
+      "Bash(git log *)"
+    ]
   }
 }

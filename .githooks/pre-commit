@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# Pre-commit code review, powered by the same checklist as .claude/agents/code-reviewer.md.
+# Bypass with: git commit --no-verify
+
+set -uo pipefail
+
+repo_root="$(git rev-parse --show-toplevel)"
+cd "$repo_root" || exit 0
+
+if git diff --cached --quiet; then
+  exit 0
+fi
+
+if ! command -v claude >/dev/null 2>&1; then
+  echo "code-reviewer hook: 'claude' CLI not found on PATH, skipping review."
+  exit 0
+fi
+
+review_output=$(claude -p \
+  --permission-mode dontAsk \
+  --model sonnet \
+  --output-format text \
+  "A git commit is about to run in this repository. Act as the code-reviewer subagent described in .claude/agents/code-reviewer.md and follow its checklist exactly. Run \`git diff --cached --stat\` and \`git diff --cached\` yourself to see the staged changes, and read the full content of each changed file for context, not just the diff hunks. Only report findings that survive verification against the actual code, each with a concrete failure scenario (specific input/state that produces a wrong result or crash). Do not flag style nitpicks, speculative refactors, or low-confidence filler. Respond with ONLY one line as your final answer: 'APPROVE' if no high-confidence issues survive review, or 'BLOCK: ' followed by the numbered findings (file:line, one-sentence summary, failure scenario) if you found real issues." 2>&1)
+review_status=$?
+
+if [ "$review_status" -ne 0 ]; then
+  echo "code-reviewer hook: review run failed (exit $review_status), allowing commit."
+  echo "$review_output"
+  exit 0
+fi
+
+if echo "$review_output" | grep -q "^BLOCK"; then
+  echo ""
+  echo "Commit blocked by code-reviewer:"
+  echo ""
+  echo "$review_output"
+  echo ""
+  echo "Fix the issues above, then re-commit. To skip this check: git commit --no-verify"
+  exit 1
+fi
+
+exit 0
