@@ -3,12 +3,12 @@
   "name": "U13 EA",
   "season": "2026-2027",
   "record": {
-    "total": 1,
+    "total": 2,
     "wins": 1,
-    "losses": 0,
+    "losses": 1,
     "draws": 0,
-    "goalsFor": 3,
-    "goalsAgainst": 1
+    "goalsFor": 4,
+    "goalsAgainst": 5
   },
   "players": [
     {
@@ -18,7 +18,7 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 1
+      "gamesPlayed": 2
     },
     {
       "id": "f6fa0a97-7b9a-43cf-8a18-f9942187df21",
@@ -27,7 +27,7 @@
       "position": "Forward",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 1
+      "gamesPlayed": 2
     },
     {
       "id": "3543b43d-0480-4804-92a1-bb9d9a0f05a5",
@@ -44,8 +44,8 @@
       "number": 46,
       "position": "Midfielder",
       "goals": 0,
-      "assists": 1,
-      "gamesPlayed": 1
+      "assists": 2,
+      "gamesPlayed": 2
     },
     {
       "id": "3324c606-95f8-4467-8392-e2685b6e3252",
@@ -54,7 +54,7 @@
       "position": "Forward",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 1
+      "gamesPlayed": 2
     },
     {
       "id": "6e82972e-3093-49ea-99ec-65341a777ea4",
@@ -63,7 +63,7 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 1
+      "gamesPlayed": 2
     },
     {
       "id": "f7a98e25-21b1-4656-9dea-1c3fd8421b1f",
@@ -72,7 +72,7 @@
       "position": "Forward",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 1
+      "gamesPlayed": 2
     },
     {
       "id": "e299e6f8-6465-4619-b055-76dfa33254a3",
@@ -90,7 +90,7 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 0
+      "gamesPlayed": 1
     },
     {
       "id": "939eb343-719f-497b-82ec-57bf29fdc733",
@@ -108,7 +108,7 @@
       "position": "Midfielder",
       "goals": 1,
       "assists": 1,
-      "gamesPlayed": 1
+      "gamesPlayed": 2
     },
     {
       "id": "8cc44eee-1db3-410b-b3c0-fd7176533e5c",
@@ -117,16 +117,16 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 1
+      "gamesPlayed": 2
     },
     {
       "id": "062b89f9-395e-4feb-977c-8ec92e90b758",
       "name": "Sonny Poreca",
       "number": 44,
       "position": "Midfielder",
-      "goals": 0,
+      "goals": 2,
       "assists": 1,
-      "gamesPlayed": 1
+      "gamesPlayed": 2
     },
     {
       "id": "724b17eb-bb70-43d2-8531-4f38757e7a44",
@@ -135,7 +135,7 @@
       "position": "Goalkeeper",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 1
+      "gamesPlayed": 2
     },
     {
       "id": "b851a409-377a-47ae-91af-1b55125b950a",
@@ -144,7 +144,7 @@
       "position": "Midfielder",
       "goals": 1,
       "assists": 0,
-      "gamesPlayed": 1
+      "gamesPlayed": 2
     },
     {
       "id": "f3e7c1d0-4a5b-4f8e-9c6b-2f1d3e5a6b7c",
@@ -153,7 +153,7 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 1
+      "gamesPlayed": 2
     }
   ],
   "events": [
