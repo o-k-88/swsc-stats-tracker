@@ -506,6 +506,42 @@ a {
   color: var(--accent);
 }
 
+.not-found > section {
+  animation: reveal 0.6s ease backwards;
+}
+
+.not-found > .not-found__links {
+  animation-delay: 0.1s;
+}
+
+.not-found__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.not-found__home {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.not-found__home:hover {
+  opacity: 0.9;
+}
+
+.not-found__teams {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .back-link {
   color: var(--muted);
   font-size: 0.9rem;
