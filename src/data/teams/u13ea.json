@@ -3,12 +3,12 @@
   "name": "U13 EA",
   "season": "2026-2027",
   "record": {
-    "total": 3,
+    "total": 4,
     "wins": 1,
-    "losses": 2,
+    "losses": 3,
     "draws": 0,
-    "goalsFor": 4,
-    "goalsAgainst": 13
+    "goalsFor": 6,
+    "goalsAgainst": 19
   },
   "players": [
     {
@@ -18,16 +18,16 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 3
+      "gamesPlayed": 4
     },
     {
       "id": "f6fa0a97-7b9a-43cf-8a18-f9942187df21",
       "name": "Jacob Bascomb",
       "number": 39,
       "position": "Forward",
-      "goals": 0,
+      "goals": 1,
       "assists": 0,
-      "gamesPlayed": 2
+      "gamesPlayed": 3
     },
     {
       "id": "3543b43d-0480-4804-92a1-bb9d9a0f05a5",
@@ -43,9 +43,9 @@
       "name": "Christian Coseo",
       "number": 46,
       "position": "Midfielder",
-      "goals": 0,
+      "goals": 1,
       "assists": 2,
-      "gamesPlayed": 3
+      "gamesPlayed": 4
     },
     {
       "id": "3324c606-95f8-4467-8392-e2685b6e3252",
@@ -54,7 +54,7 @@
       "position": "Forward",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 3
+      "gamesPlayed": 4
     },
     {
       "id": "6e82972e-3093-49ea-99ec-65341a777ea4",
@@ -63,7 +63,7 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 2
+      "gamesPlayed": 3
     },
     {
       "id": "f7a98e25-21b1-4656-9dea-1c3fd8421b1f",
@@ -90,7 +90,7 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 2
+      "gamesPlayed": 3
     },
 
     {
@@ -99,8 +99,8 @@
       "number": 51,
       "position": "Midfielder",
       "goals": 1,
-      "assists": 1,
-      "gamesPlayed": 3
+      "assists": 2,
+      "gamesPlayed": 4
     },
     {
       "id": "8cc44eee-1db3-410b-b3c0-fd7176533e5c",
@@ -109,7 +109,7 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 3
+      "gamesPlayed": 4
     },
     {
       "id": "062b89f9-395e-4feb-977c-8ec92e90b758",
@@ -117,8 +117,8 @@
       "number": 44,
       "position": "Midfielder",
       "goals": 2,
-      "assists": 1,
-      "gamesPlayed": 3
+      "assists": 2,
+      "gamesPlayed": 4
     },
     {
       "id": "724b17eb-bb70-43d2-8531-4f38757e7a44",
@@ -136,7 +136,7 @@
       "position": "Midfielder",
       "goals": 1,
       "assists": 0,
-      "gamesPlayed": 3
+      "gamesPlayed": 4
     },
     {
       "id": "f3e7c1d0-4a5b-4f8e-9c6b-2f1d3e5a6b7c",
@@ -145,7 +145,7 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 3
+      "gamesPlayed": 4
     }
   ],
   "events": [
