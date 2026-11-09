@@ -3,12 +3,12 @@
   "name": "U13 EA",
   "season": "2026-2027",
   "record": {
-    "total": 4,
+    "total": 5,
     "wins": 1,
-    "losses": 3,
+    "losses": 4,
     "draws": 0,
     "goalsFor": 6,
-    "goalsAgainst": 19
+    "goalsAgainst": 27
   },
   "players": [
     {
@@ -18,7 +18,7 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 4
+      "gamesPlayed": 5
     },
     {
       "id": "f6fa0a97-7b9a-43cf-8a18-f9942187df21",
@@ -27,7 +27,7 @@
       "position": "Forward",
       "goals": 1,
       "assists": 0,
-      "gamesPlayed": 3
+      "gamesPlayed": 4
     },
     {
       "id": "3543b43d-0480-4804-92a1-bb9d9a0f05a5",
@@ -36,7 +36,7 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 1
+      "gamesPlayed": 2
     },
     {
       "id": "84cec8a8-f056-4f57-8106-c99ad9960bfc",
@@ -45,7 +45,7 @@
       "position": "Midfielder",
       "goals": 1,
       "assists": 2,
-      "gamesPlayed": 4
+      "gamesPlayed": 5
     },
     {
       "id": "3324c606-95f8-4467-8392-e2685b6e3252",
@@ -54,7 +54,7 @@
       "position": "Forward",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 4
+      "gamesPlayed": 5
     },
     {
       "id": "6e82972e-3093-49ea-99ec-65341a777ea4",
@@ -63,7 +63,7 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 3
+      "gamesPlayed": 4
     },
     {
       "id": "f7a98e25-21b1-4656-9dea-1c3fd8421b1f",
@@ -100,7 +100,7 @@
       "position": "Midfielder",
       "goals": 1,
       "assists": 2,
-      "gamesPlayed": 4
+      "gamesPlayed": 5
     },
     {
       "id": "8cc44eee-1db3-410b-b3c0-fd7176533e5c",
@@ -109,7 +109,7 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 4
+      "gamesPlayed": 5
     },
     {
       "id": "062b89f9-395e-4feb-977c-8ec92e90b758",
@@ -118,7 +118,7 @@
       "position": "Midfielder",
       "goals": 2,
       "assists": 2,
-      "gamesPlayed": 4
+      "gamesPlayed": 5
     },
     {
       "id": "724b17eb-bb70-43d2-8531-4f38757e7a44",
@@ -136,7 +136,7 @@
       "position": "Midfielder",
       "goals": 1,
       "assists": 0,
-      "gamesPlayed": 4
+      "gamesPlayed": 5
     },
     {
       "id": "f3e7c1d0-4a5b-4f8e-9c6b-2f1d3e5a6b7c",
@@ -145,7 +145,7 @@
       "position": "Defender",
       "goals": 0,
       "assists": 0,
-      "gamesPlayed": 4
+      "gamesPlayed": 5
     }
   ],
   "events": [
